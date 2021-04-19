@@ -19,7 +19,7 @@ body {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
     .header {
         display: none;
     }
@@ -202,7 +202,7 @@ h3 span::before {
 }
 
 .outer-container {
-    padding: 60px;
+    padding: 60px 0;
     margin-bottom: 50px;
 }
 
