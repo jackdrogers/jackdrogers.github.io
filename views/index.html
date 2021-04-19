@@ -3,6 +3,9 @@
 <head>
 	<link rel="stylesheet" href="/css/index.css" />
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jack Rogers' Portfolio</title>
 </head>
 
@@ -10,7 +13,6 @@
 	<%- include("partials/header.html") %>
 	<div class="hero">
 		<div class="hero--image"></div>
-		<div class="hero--overlay"></div>
 		<div class="hero--content">
 			<div>
 				<h1>Jack Rogers</h1>
@@ -19,117 +21,133 @@
 		</div>
 	</div>
 	<div class="main">
-		<h2>About</h2>
+		<h2 class="subheader underline">About</h2>
 		<div class="container">
 			<div class="container--block">
 				<p>
 					I have a desire and passion to work in the IT industry. I’ve been an avid programmer since I was 10,
-					and
-					have always taken pride in my ability to press forward and improve both myself and the results of my
-					work.<br /><br />
-					I completed my work experience program with a technology company based in Lowestoft where I was
-					offered and
-					completed a 6-week paid work assignment after my initial 2 weeks.<br /><br />
-					I had an initial years worth of experience via an apprenticeship, where I did full stack software
-					development. I was offered a job after the initial year.
+					and have always taken pride in my ability to press forward and improve both myself and the results of my
+					work.
+					<br/><br/>
+					My favourite part of development is the inital development discussions, where the best solution will be found for a particular piece of work. I also love the trill of finishing a piece of work and seeing how everything has came together and what improvements I've made during the process.<br/><br/>
+					
+					Outside of development I love to play video games, draw, bike ride and sleep.
 				</p>
 			</div>
 		</div>
-		<h2>Experience & Education</h2>
-		<div class="container">
-			<div class="container--block big">
-				<div class="container--block--content">
-					<h3>February 2019 - Present<span>Awaze UK (Front End Developer)</span></h3>
-					<span>After moving on from Naked Element, I then went to what was originally Hoseasons. Here I focused on Front End Development where I was tasked with both website support and creating new additions towards our websites with tight deadlines.</span>
-				</div>
-				<div class="container--block--content">
-					<h3>April 2017 - July 2018<span>Naked Element (Junior Developer)</span></h3>
-					<span>After going to college, I decided to take an apprenticeship, where I worked with Naked Element. Here  I learnt how to create express based node servers for a front end website, and Springboot java based applications for the backend of a website, which communicated with a Postgres database. When working, I also learned how to deal with customer wants and needs, and learned how to manage time effectively to get tasks done within a certain time frame. I also got to work with Linux servers, and found out how to set up and manage servers. I was asked to stay after my apprenticeship, as I was a valuable asset to the business. </span>
-				</div>
-				<div class="container--block--content">
-					<h3>May 2015 - January 2017<span>Pure IT Moves (IT Technican)</span></h3>
-					<span>I have been working weekends for PureIT whilst at College, PureIT is a business that revolves around moving and setting up IT equipment. This job requires me to work as part of a team and within strict time constraints. My role here was to take apart and reconstruct PC’s for Aviva, Norwich union and other large companies within Norwich. I have enjoyed working with PureIT as I feel this role has helped with my own personal development.</span>
-				</div>
-				<div class="container--block--content">
-					<h3>Summer 2013<span>Liquid 11 Ltd. (Work Experience)</span></h3>
-					<span>As part of my school’s work experience program I secured a position for a web and technology company - Liquid11 Ltd. Here, I experienced: Data handling, Web design, PC assembly and various programming tasks. I also learned how to work as part of a team. On completion of my work experience I received several gifts and was asked to continue through my 6 weeks’ holiday. I really enjoyed my time here and it helped me to decide on the career path I wish to follow.</span>
-				</div>
-			</div>
-			<div class="container--block">
-				<div class="container--block--content">
-					<h3>East Norfolk Sixth Form<span>Gorleston</span></h3>
-					<span>A Levels:</span>
-					<ul>
-						<li>AS Use of Maths: B</li>
-						<li>BTEC Games Design Y1: Pass</li>
-						<li>BTEC Games Design Y2: Pass</li>
-						<li>BTEC IT/Ecommerce: Pass</li>
-					</ul>
-				</div>
-				<div class="container--block--content">
-					<h3>Hobart High School<span>Loddon</span></h3>
-					<span>GCSE's:</span>
-					<ul>
-						<li>Maths: B</li>
-						<li>Statistics: B</li>
-						<li>English Literature: B</li>
-						<li>English Language: C</li>
-						<li>Science: C</li>
-						<li>Additional Science: C</li>
-						<li>Business: C</li>
-						<li>Media: C</li>
-						<li>Art: D</li>
-						<li>French: D</li>						
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h2>Skills</h2>
-		<div class="container">
-			<div class="skills-graph">
-				<div class="bar-js">
-					<span class="subject">Javascript</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="95%"></div>
+		<div style="background-color: #F1F1F1; padding: 10px;">
+			<h2>Experience & Education</h2>
+			<div class="container">
+				<div class="container--block big">
+					<div class="container--block--content">
+						<h3>February 2019 - Present<span>Awaze UK (Front End Developer)</span></h3>
+						<span>After moving on from Naked Element, I then went to what was originally Hoseasons. Here I focused on Front End Development where I was tasked with both website support and creating new additions towards our websites with tight deadlines. The team I was working with was a lot larger in comparison to my last role, which meant my communication and teamwork had to be at an all time high if I wanted to deliver the highest quality work with my colleagues in the short time frames we were given.</span>
+					</div>
+					<div class="container--block--content">
+						<h3>April 2017 - July 2018<span>Naked Element (Junior Developer)</span></h3>
+						<span>After going to college, I decided to take an apprenticeship, where I worked with Naked Element. Here I learnt how to create express based node servers for a front end website, and Springboot java based applications for the backend of a website. This application would communicate with a Postgres database. This role taught me many things, such as working in agile, source control, recieving feedback from clients, and delivering a product as part of a small team.</span>
+					</div>
+					<div class="container--block--content">
+						<h3>May 2015 - January 2017<span>Pure IT Moves (IT Technican)</span></h3>
+						<span>During college, I would work weekends for PureIT. My role at PureIT required me to deconstruct and reconstruct entire office worspaces. It was very fast paced and required me to have constant discussions with my colleagues to ensure that the process is going smoothly. I was involved in moving large offices for companies such as Aviva and the Norwich Union.</span>
+					</div>
+					<div class="container--block--content">
+						<h3>Summer 2013<span>Liquid 11 Ltd. (Work Experience)</span></h3>
+						<span>As part of my school’s work experience program I secured a position for a web and technology company - Liquid11 Ltd. Here, I experienced: Data handling, Web design, PC assembly and various programming tasks. I also learned how to work as part of a team. On completion of my work experience I received several gifts and was asked to continue through my 6 weeks’ holiday. I really enjoyed my time here and it helped me initally decide on the career path I wish to follow.</span>
 					</div>
 				</div>
-				<div class="bar-html">
-					<span class="subject">HTML</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="95%"></div>
+				<div class="container--block">
+					<div class="container--block--content">
+						<h3>East Norfolk Sixth Form<span>Gorleston</span></h3>
+						<span>A Levels:</span>
+						<ul>
+							<li>AS Use of Maths: B</li>
+							<li>BTEC Games Design Y1: Pass</li>
+							<li>BTEC Games Design Y2: Pass</li>
+							<li>BTEC IT/Ecommerce: Pass</li>
+						</ul>
 					</div>
-				</div>
-				<div class="bar-css">
-					<span class="subject">CSS</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="85%"></div>
-					</div>
-				</div>
-				<div class="bar-java">
-					<span class="subject">Java</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="80%"></div>
-					</div>
-				</div>
-				<div class="bar-ab">
-					<span class="subject">A/B Tests</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="75"></div>
-					</div>
-				</div>
-				<div class="bar-sitecore">
-					<span class="subject">Sitecore</span>
-					<div class="bar-container">
-						<div class="bar" data-percentage="60"></div>
+					<div class="container--block--content">
+						<h3>Hobart High School<span>Loddon</span></h3>
+						<span>GCSE's:</span>
+						<ul>
+							<li>Maths: B</li>
+							<li>Statistics: B</li>
+							<li>English Literature: B</li>
+							<li>English Language: C</li>
+							<li>Science: C</li>
+							<li>Additional Science: C</li>
+							<li>Business: C</li>
+							<li>Media: C</li>
+							<li>Art: D</li>
+							<li>French: D</li>						
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<h2>Interests</h2>
-		<div class="container">
-			<div class="container--block">
+		<div class="outer-container dark">
+			<h2>Skills</h2>
+			<div class="container">
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-javascript-plain"></i>
+						<h3>Javascript</h3>
+						<span>Years of javascript including jQuery and React.</span>
+					</div>
+				</div>
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-java-plain"></i>
+						<h3>Java</h3>
+						<span>MVC applications using Springboot to send all the data that you need.</span>
+					</div>
+				</div>
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-nodejs-plain"></i>
+						<h3>NodeJS</h3>
+						<span>Dozens of self created bots and automation tools</span>
+					</div>
+				</div>
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-postgresql-plain"></i>
+						<h3>Database Management</h3>
+						<span>Experience handling and managing databases created in PostgreSQL</span>
+					</div>
+				</div>
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-git-plain"></i>
+						<h3>Source Control</h3>
+						<span>Essential knowledge learnt to aid working with others.</span>
+					</div>
+				</div>
+				<div class="container--block">
+					<div class="text-center">
+						<i class="devicon-digitalocean-plain"></i>
+						<h3>Server Maintenance</h3>
+						<span>Personal and company maintaned servers include deployments and OS upgrades</span>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<h3>And more!</h3>
+				<span>Other skills include knowledge and experience using sitecore, creating A/B tests though Adobe Target and Google Optimize, Jenkins, NGINX and Apache Tomcat.</span>
+			</div>
+		</div>
+		<h2 class="subheader">Contact</h2>
+		<div class="container" style="max-width: 900px;">
+			<div class="container--block small-icons">
 				<p>
-					Outside of development I love to play video games, draw, bike ride and sleep.
+					<a href="emailto:jackdrogers1998@gmail.com"><i class="fas fa-envelope"></i></a> - <a href="emailto:jackdrogers1998@gmail.com">jackdrogers1998@gmail.com</a>
+				</p>
+				<p>
+					<a href="tel:07745538872"><i class="fas fa-mobile-alt"></i></a> - <a href="tel:07745538872">07745538872</a>
+				</p>
+				<p>
+					<a href="https://www.linkedin.com/in/jackrogers0105/" target="_blank"><i class="fab fa-linkedin"></i></a> - <a href="https://www.linkedin.com/in/jackrogers0105/" target="_blank">jackrogers0105</a>
 				</p>
 			</div>
 		</div>

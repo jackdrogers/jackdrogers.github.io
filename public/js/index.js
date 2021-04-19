@@ -4,14 +4,7 @@ let navigation = document.getElementById('navigation'),
 	skillsGraph = document.querySelector('.skills-graph'),
 	boundingBox = skillsGraph.getBoundingClientRect();
 
-console.log(window.pageYOffset > boundingBox.top)
-	
 window.onscroll = () => {
-	if(!navigation.classList.contains('sticky') || window.pageYOffset < sticky) {
-		window.pageYOffset > sticky ? navigation.classList.add('sticky') : navigation.classList.remove('sticky');
-	}
-
-	
 	if(isScrolledIntoView(skillsGraph)) {
 		skillsGraph.classList.add('init')		
 	}
