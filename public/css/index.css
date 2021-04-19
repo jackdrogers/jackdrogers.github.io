@@ -1,0 +1,306 @@
+* {
+    font-family: 'Open Sans';
+    color: #555555;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    padding: 10px 16px;
+    width: 100%;
+    background: transparent;
+    color: #f1f1f1;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    transition: 0.3s;
+}
+
+.footer {
+    width: 100%;
+    background: #000;
+    height: 250px;
+    color: #f1f1f1;
+}
+
+.footer--container {
+    padding: 20px;
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+    max-width: 1190px;
+    overflow: hidden;
+}
+
+.sticky {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navigation {
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    flex: 1;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: .1em 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    color: rgb(207, 207, 207);
+}
+
+p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 550px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.hero--image {
+    background-image: url('https://recruitingsocial.com/wp-content/uploads/2015/05/coding-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.hero--overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero--content {
+    position: absolute;
+    bottom: 150;
+    right: 0;
+    z-index: 4;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.hero--content h1 {
+    font-size: 50px;
+    line-height: 58px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero--content span {
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.container--block {
+    background-color: #f8f8f8;
+    flex: 1;
+    margin: 10;
+    padding: 10;
+}
+
+.container--block.big {
+    flex: 2;
+}
+
+.container--block--content {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3 {
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h3 span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h3 span::before {
+    content: " - "
+}
+
+.skills-graph {
+    width: 100%;
+}
+
+.skills-graph.init .subject {
+    -webkit-animation: show-subject 2.2s 0.1s forwards;
+    -moz-animation: show-subject 2.2s 0.1s forwards;
+    animation: show-subject 2.2s 0.1s forwards;
+}
+
+.skills-graph>div {
+    float: left;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.bar-container {
+    width: 89%;
+    display: inline-block;
+    background-color: #f8f8f8;
+}
+
+.skills-graph .subject {
+    float: left;
+    margin-top: 18px;
+    width: 10%;
+    text-align: right;
+    padding-right: 5px;
+    opacity: 0;
+}
+
+.skills-graph .bar {
+    border-radius: 3px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    background-color: #ea990e;
+}
+
+.skills-graph .bar::after {
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 600;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+}
+
+.skills-graph.init .bar-js .bar {
+    -webkit-animation: show-bar-js 1.2s 0.1s forwards;
+    -moz-animation: show-bar-js 1.2s 0.1s forwards;
+    animation: show-bar-js 1.2s 0.1s forwards;
+}
+
+.skills-graph.init .bar-html .bar {
+    -webkit-animation: show-bar-html 1.2s 0.2s forwards;
+    -moz-animation: show-bar-html 1.2s 0.2s forwards;
+    animation: show-bar-html 1.2s 0.2s forwards;
+}
+
+.skills-graph.init .bar-css .bar {
+    -webkit-animation: show-bar-css 1.2s 0.3s forwards;
+    -moz-animation: show-bar-css 1.2s 0.3s forwards;
+    animation: show-bar-css 1.2s 0.3s forwards;
+}
+
+.skills-graph.init .bar-java .bar {
+    -webkit-animation: show-bar-java 1.2s 0.4s forwards;
+    -moz-animation: show-bar-java 1.2s 0.4s forwards;
+    animation: show-bar-java 1.2s 0.4s forwards;
+}
+
+.skills-graph.init .bar-ab .bar {
+    -webkit-animation: show-bar-ab 1.2s 0.4s forwards;
+    -moz-animation: show-bar-ab 1.2s 0.4s forwards;
+    animation: show-bar-ab 1.2s 0.4s forwards;
+}
+
+
+@keyframes show-bar-js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes show-bar-html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes show-bar-css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes show-bar-java {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes show-bar-ab {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@-webkit-keyframes show-subject {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
